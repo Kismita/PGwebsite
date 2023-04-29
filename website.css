@@ -4,8 +4,8 @@
     padding:0px;
     list-style: none;
 }
-.Pgimage{
-    background-image: url('Pgimage.jpg');
+.bgimage{
+    background-color: white;
     background-size:100% 100%;
     width:100%;
     height:100vh;
@@ -19,8 +19,8 @@
 
 .body1{
     background-color:black;
-    width:1550px;
-    height:100px;
+    width:100%;
+    height:100%;
     margin:auto;
     padding:0px;
 }
@@ -33,14 +33,14 @@
     font-size:20px;
 }
 #logo{
-     width:250px;
+     width:18%;
      height:80px;
-     margin-left:-400px;
+     margin-left:-600px;
      margin-top:10px;
      cursor: pointer;
 }
 .top{
-    left:900px;
+    left:775px;
     position:relative;
     float: left;
     color:rgb(199, 193, 193);
@@ -50,8 +50,8 @@
     text-decoration: none;
 }
 .mainhead{
-    padding-right:10px;
-    top:40px;
+    padding-right:0px;
+    top:100px;
     font-weight: lighter;
     text-decoration: none;
 }
@@ -63,11 +63,11 @@ a:after{
     content:"";
     position:absolute;
     background-color:grey;
-    height:0.3px;
+    height:1px;
     width:0px;
     left:0px;
-    bottom:50px;
-    transition-duration: 0.2s;
+    bottom:35px;
+    transition-duration: 0.5s;
 
     
 }
@@ -78,4 +78,11 @@ a:after{
 a:hover:after{
     width:100%;
 
+}
+.bgvid{
+    position:fixed;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:-1;
 }
