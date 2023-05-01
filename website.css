@@ -5,8 +5,7 @@
     list-style: none;
 }
 .bgimage{
-    background-color: white;
-    background-size:100% 100%;
+    background-size:100%;
     width:100%;
     height:100vh;
 }
@@ -19,17 +18,16 @@
 
 .body1{
     background-color:black;
-    width:100%;
+    width:105%;
     height:100%;
     margin:auto;
     padding:0px;
+    position:flex;
 }
 .body2{
-    background-color:white;
     margin-left:600px;
     margin-top: 350px;
     padding:0px;
-    font-family: 'Raleway Dots', cursive;
     font-size:20px;
 }
 #logo{
@@ -46,7 +44,7 @@
     color:rgb(199, 193, 193);
     font-family: 'Yantramanav', sans-serif;
     padding:30px;
-    margin-top:-10px;
+    margin-top:-3px;
     text-decoration: none;
 }
 .mainhead{
@@ -55,19 +53,20 @@
     font-weight: lighter;
     text-decoration: none;
 }
-a{
+.body1 a{
     text-decoration: none;
-    font-size: 13px;
+    font-size: 12px;
 }
-a:after{
+.body1 a:after{
     content:"";
     position:absolute;
     background-color:grey;
-    height:1px;
+    height:2px;
     width:0px;
-    left:0px;
-    bottom:35px;
-    transition-duration: 0.5s;
+    left:50%;
+    bottom:27px;
+    transition: width 0.5s;
+    transform : translateX(-50%);
 
     
 }
@@ -75,8 +74,8 @@ a:after{
     color:grey;
 }
 
-a:hover:after{
-    width:100%;
+.body1 a:hover:after{
+    width:50%;
 
 }
 .bgvid{
@@ -85,4 +84,72 @@ a:hover:after{
     bottom:0;
     left:0;
     z-index:-1;
+}
+.cart-icon{
+    width:20px;
+    cursor : pointer;
+    margin-left:1100px;
+    margin-bottom: 35px;
+}
+
+.text1 h1{
+    margin-top:350px;
+    margin-right:0px;
+    margin-left:150px;
+    font-size:40px;
+    color:rgb(250, 244, 244);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+.text1 h2{
+    margin-top:0px;
+    margin-right:0px;
+    margin-left:150px;
+    font-weight:700;
+    font-size:150px;
+    color:transparent;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    line-height:160px;
+    background:url(back.png);
+    -webkit-background-clip:text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text2{
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    margin-top:0px;
+}
+.text2 a {
+    color:white;
+    text-decoration: none;
+    padding:10px 20px;
+    margin-left: 180px;
+    border:1px solid rgb(255, 255, 255);
+    
+}
+.text2 a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left:5px;    
+    background-color:transparent;
+    border-radius:8px ;
+}
+.text2 a:hover{
+    background-color:#1a1919 ;
+    color:rgb(255, 255, 255);
+
+}
+.text2 span{
+    font-size:20px;
+    margin-left: 20px;
+    color: white;
+    
 }
